@@ -25,4 +25,12 @@
         </div>
     </div>
     {{ end }}
+    {{ if .IsPage }}
+    <div class="edit">
+      <a href="https://github.com/taskmedia/blog/edit/master/content/{{ .File.Path }}">
+        <i class="fa fa-edit"></i>
+        <div class="links">Edit</div>
+      </a>
+    </div>
+    {{ end }}
 </div>

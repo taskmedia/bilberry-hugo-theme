@@ -165,6 +165,22 @@ article {
             }
         }
 
+       .edit {
+            display: flex;
+            align-items: center;
+            margin: 1em 2em;
+            .links {
+                display: inline-block;
+                white-space: nowrap;
+                margin-left: 0.75em;
+                a:not(:last-child):after { 
+                    content: " / ";
+                    color: $text-color !important;
+                }
+            }
+        }
+       
+
         .languages {
             display: flex;
             align-items: center;
