@@ -142,7 +142,7 @@ article {
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        background: transparentize($base-color, 0.90);
+        background: transparentize($article-footer-background-color, 0.90);
 
         font-family: $article-footer-font;
         font-size: 0.9em;
