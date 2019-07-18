@@ -12,5 +12,17 @@
         {{ template "_internal/disqus.html" . }}
     {{ end }}
 
+    <!-- github comments -->
+    <div class="comments">
+        <script src="https://utteranc.es/client.js"
+                repo="taskmedia/blog"
+                issue-term="pathname"
+                label="comment"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+    </div>
+
     {{ .Scratch.Set "singlePage" false }} <!-- RESET singlePage variable -->
 {{ end }}
